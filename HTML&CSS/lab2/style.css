@@ -1,0 +1,39 @@
+.general{
+    border-style: solid;
+    background-color: #139ea8;
+    height: 500px;
+    width: 380px;
+    border: 5px solid pink ;
+}
+img{
+    border-style: groove;
+    border-color: pink;
+    border: 5px solid ;
+    width: 300px;
+    margin-bottom: 20px;
+    float: inherit;
+    
+
+    
+}
+.vanban{
+    border-style: double;
+    background-color: aquamarine;
+    border-color: red;
+    height: 250px;
+    width: 320px;
+    position: absolute;
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+#s1, #s3{
+    display: block;
+    background-color: aqua;
+    visibility: visible;
+    opacity: 0.5;
+}
+#s2{
+    display: none;
+}

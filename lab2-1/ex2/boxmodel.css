@@ -1,0 +1,26 @@
+
+.content{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    border-color: aqua;
+    height: 500px;
+    width: 400px;
+    background-color: chocolate;
+}
+.picture{
+    border: 3px solid yellow;
+    width: 340px;
+}
+
+
+.para{
+    margin-top: 20px;
+    border: 3px;
+    border-style: inset;
+    border-color: pink;
+    overflow: auto;
+    height: 140px;
+    background-color: rgb(35, 170, 194);
+}

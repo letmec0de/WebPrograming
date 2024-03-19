@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body style="text-align: center;">
+    <style>
+        form{
+            width: 300px;
+            margin: display block;
+            margin: 0 auto; 
+            background-color: rgba(209, 216, 224,1.0);
+            border-radius: 20px;
+            padding: 10px;
+
+        }
+        
+    </style>
+    
+    <h2>Personal Information</h2>
+    <form id="registration-form" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input style="text-align: right;" type="text" id="name" name="name" required><br><br>
+        
+        <label>Sex*:</label>
+        <input type="radio" id="male" name="sex" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label " for="dob">DOB*</label>
+        <input style="text-align: right;" type="text" id="dob" name="dob" required><br><br>
+        
+        <label for="address">Street:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <label for="city">City*:</label>
+        <input type="text" id="city" name="city" required><br><br>
+        
+        <label for="region">Region*:</label>
+        <select id="region" name="region" required>
+            <option value="">Chọn quận</option>
+            <option value="ninh_kieu">Ninh Kiều</option>
+            <option value="binh_thuy">Bình Thủy</option>
+            <option value="cai_rang">Cái Răng</option>
+            <option value="thot_not">Thốt Nốt</option>
+    
+        </select><br><br>
+        
+        <label for="zipcode">ZipCode:</label>
+        <input type="text" id="zipcode" name="zipcode" required><br><br>
+        
+        <button type="submit">Finish</button>
+        <span><button type="reset">Clear</button></span>
+    </form>
+
+    <script>
+        function validateForm() {
+           //kiem tra tinh hop le name
+            let name = document.getElementById('name').value.trim();
+            if (name === '') {
+                alert("Please enter your name.");
+                return false;
+            }
+
+            // Kiem tra tinh hop le email
+            let email = document.getElementById('email').value.trim();
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // DOB
+            let dob = document.getElementById('dob').value.trim();
+            let dobRegex = /^(0[1-9]|1[0-2])\/(0[1-9]|[12]\d|3[01])\/\d{4}$/;
+            if (!dobRegex.test(dob)) {
+                alert("Please enter a valid date of birth in mm/dd/yyyy format.");
+                return false;
+            }
+
+            //  Zip Code
+            let zipcode = document.getElementById('zipcode').value.trim();
+            let zipcodeRegex = /^\d{5}$/;
+            if (!zipcodeRegex.test(zipcode)) {
+                alert("Please enter a valid 5-digit zip code.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

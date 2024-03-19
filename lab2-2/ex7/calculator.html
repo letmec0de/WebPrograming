@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="calstyle.css">
+    <script type="text/javascript" src="cal.js"></script>
+</head>
+<body>
+    <table class="calculator">
+        <tr >
+            <td colspan="4">
+                <input type="text" id="result" placeholder="Hãy nhập số vào để tính toán nhá">
+            </td>
+        </tr>
+     
+            
+        <tr>
+            <td><input type="button" value="1" onclick="hienThi('1')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="2" onclick="hienThi('2')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="3" onclick="hienThi('3')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="+" onclick="hienThi('+')" onkeyup="xulySukien(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="hienThi('4')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="5" onclick="hienThi('5')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="6" onclick="hienThi('6')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="-" onclick="hienThi('-')" onkeyup="xulySukien(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="hienThi('7')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="8" onclick="hienThi('8')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="9" onclick="hienThi('9')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value="*" onclick="hienThi('*')" onkeyup="xulySukien(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="C" onclick="xoa()"></td>
+            <td><input type="button" value="0" onclick="hienThi('0')" onkeyup="xulySukien(event)"></td>
+            <td><input type="button" value= "=" onclick="tinhToan()"></td>
+            <td><input type="button" value="/" onclick="hienThi('/')" onkeyup="xulySukien(event)"></td>
+        </tr>
+       
+    </table>
+    <div class="dropdown">
+    <button>Thay đổi giao diện </button>
+    <div class="dropdown-options">
+        <button onclick="changeTheme('calstyle.css')">Sáng</button>
+        <button onclick="changeTheme('calstyle2.css')">Tối</button>
+    </div>
+  </div>
+</body>
+</html>

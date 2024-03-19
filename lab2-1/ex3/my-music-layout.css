@@ -1,0 +1,54 @@
+/* define your CSS here */
+
+.web-body{
+    background: url(pic/hoa-bo-cong-anh-41-800x1059-1-e1654085846610.jpg);
+    width: 35%;
+    border: 10px white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.music{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #c2e9e9;
+    margin-top: 10px;
+    border: 4px #1dc0c0;
+    margin-left: 180px;
+    text-align: justify;
+
+}
+.header{
+    text-align: right;
+    background-color: #c2e9e9;
+    border-radius: 10px;
+}
+img{
+    margin-top: 0px;
+    float: right;
+    width: 150px;
+    position: relative;
+   
+    
+    
+}
+.date{
+    border-bottom:2px dashed cyan ;
+}
+#nevigation{
+    border: #1dc0c0;
+    background: rgb(155, 178, 207);
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 15px;
+    padding: 5px;
+}
+#s1, #s2, #s3, #s4, #s5.nevigation{
+    margin-left: 10px;
+}
+.update{
+    margin-left: 33%;
+
+}

@@ -1,0 +1,170 @@
+body{
+    background-color: rgba(204, 174, 98,1.0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.banner img{
+    text-align: center;
+    width: 50%;
+    height: auto;
+    background-color: #badc58;
+    border-radius: 5px;
+}
+
+
+
+.title{
+    text-align: center;
+    margin: auto;
+    width: 900px;
+    font-size: larger;
+    color: black;
+    text-shadow: 1px 1px #2ecc71;
+
+}
+.content{
+    width: 800px;
+    border: rgba(149, 165, 166,1.0) solid 2px;
+    margin: auto;
+    border-radius: 30px;
+    height: 1500px;
+    width: 960px;
+    position: relative;
+   
+   
+}
+.reviewusers{
+    font-family: monospace;
+    width: 200px;
+    margin: 2px;
+    margin-top: 20px;
+    width: 300px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color:#d9e69e(157, 178, 104) ;
+    
+}
+.reviewusers:nth-child(8){
+    position: absolute;
+    margin-top: 20px;
+    right: 0px;
+}
+.reviewusers:nth-child(7){
+    position: absolute;
+   right: 0px;
+   margin-top: 270px;
+}
+
+ img{
+    width: 359px;
+    height: auto;
+    background-color: #05282a;
+    border-radius: 20px;
+    margin-bottom: 0px;
+
+
+}
+
+
+.overviewtext{
+    background-color: #A3B964;
+    border-radius: 5px;
+    margin-top:-20px;
+    height: 960px;
+}
+.reviewerinfor{
+    border: solid 2px rgba(209, 204, 192,1.0);
+    margin-top: 10px;
+    border-radius:10px;
+}
+
+
+.review-box{
+    
+}
+.reviewer{
+    font-weight:bold;
+    margin-top: 5px;
+    left: 15px;
+    height: 20px;
+    
+}
+.total{
+    background-color: yellow;
+    position: absolute;
+    bottom: 4px;
+    width: 970px;
+    
+    
+}
+.ratingreview{
+    
+    width: 602px;
+    height: 1410px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+
+}
+.generaloverview{
+    position: absolute;
+    right: 0px;
+    width: 359px;
+    top: 0px;
+    border-radius: 5px;
+    height: 1500px;
+    
+
+}
+.rating{
+    background-color: rgba(46, 204, 113,1.0);
+    border: rgba(39, 174, 96,1.0) solid 2px;
+    border-radius: 2%;
+    color: red;
+    text-align: left;
+    width: 600px;
+    position: static;
+   
+
+    
+}
+.review{
+    background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+
+}
+.reviewbox{
+    border: rgba(127, 140, 141,1.0) solid 2px;
+    border-radius: 5px;
+   
+}
+.reviewer{
+    position: relative;
+    margin-top: 10px;
+
+}
+dt{
+    text-align: left;
+    font-weight: bold;
+}
+dd{
+    text-align: left;
+}
+.avt {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+
+}

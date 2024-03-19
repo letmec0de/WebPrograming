@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="UX-A Compatible" content="refresh">
+    <link rel="stylesheet" href="ptbac2style.css">
+    <title>Phương trình bậc hai</title>
+</head>
+<body>
+    <style>
+        
+        .ptbac2style{
+            background-image: url(https://cdn.mos.cms.futurecdn.net/rwow8CCG3C3GrqHGiK8qcJ-650-80.jpg.webp);
+            text-align: center;
+            background-color: rebeccapurple;
+            width: 300px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        h2{
+            font-size: 300;
+        }
+
+    </style>
+    <div class="ptbac2style">
+        <h2>Giải phương trình bậc hai</h2>
+        <form id="quadratic-form">
+            <label for="a">Biến A:</label>
+            <input type="number" id="a" name="a" > <span id="err" style="color: red;"></span>
+            <br>
+            <br>
+            <label for="b">Biến B:</label>
+            <input type="number" id="b" name="b" ><br><br>
+            
+            <label for="c">Biến C:</label>
+            <input type="number" id="c" name="c"><br><br>
+            
+            <button type="button" onclick="tinhPtbac2()">Submit</button>
+        </form>
+
+        <div id="delta"></div>
+        <br><br>
+        <div id="result"></div>
+        </div>
+
+        <script>
+            /*Thuat toan nhu sau :
+            Ax2 + Bx + C = 0
+            -- Delta  = bb - 4ac
+            delta > 0
+                -- pt co no phan biet 
+                ++ x1= (-b + sqrt{delta})/2a
+                ++ x2= (-b + sqrt{delta})/2a
+            delta = 0
+                + pt co no kep x1 = x2 = -b / 2a
+            else < 0 
+                + pt vo no
+
+
+            */
+        
+
+           function tinhPtbac2(){
+
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            let c = parseFloat(document.getElementById("c").value);
+                let delta = b * b - 4 * a * c;
+                document.getElementById("delta").innerHTML = "Delta = " +delta;
+                if (delta > 0) {
+                let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                let  number1 = x1.toFixed(2);
+                let  number2 = x1.toFixed(2);
+
+                document.getElementById("result").innerHTML = "Phương trình có 2 nghiệm phân biệt : ";
+                document.getElementById("result").innerHTML += "x1 = " + number1 + ", ";
+                document.getElementById("result").innerHTML += "x2 = " + number2;
+
+               } else if (delta == 0) {
+                let x = -b / (2 * a);
+                let  number = x.toFixed(2);
+
+                document.getElementById("result").innerHTML = "Phương trình có nghiệm kép: x = " + x;
+
+                }
+            else {
+                document.getElementById('result').innerHTML = "Phương trình vô nghiệm";
+           }
+        }
+        </script>
+</body>
+</html>

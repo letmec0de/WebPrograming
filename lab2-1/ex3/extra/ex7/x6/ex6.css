@@ -1,0 +1,34 @@
+.page-body{
+    color: #454545;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 3px green ridge;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+    background-color:#bdc3c7 ;
+    
+}
+.table-1{
+    border: 10px;
+    width: 800px;
+    
+}
+.top-header{
+    border: 2px ridge #3498db;
+    background-color: #7f8c8d;
+    
+}
+.picture-1{
+
+    
+}
+.table-head{
+    background-color: #3498db;
+    text-decoration: underline;
+}
+.table-row-left{
+    text-align:right ;
+}
+.table-row-right{
+    text-align: left;
+}
